@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block header %}
+<h2>{% block title %}Inicio{% endblock title %}</h2>
+{% endblock header %} {% block content %}
+<div class="botones-ejercicios">
+  <a
+    class="boton-ejercicio boton-ejercicio-1"
+    href="{{ url_for('pages.ejercicio1') }}"
+  >
+    <span>Ejercicio 1</span>
+  </a>
+  <a
+    class="boton-ejercicio boton-ejercicio-2"
+    href="{{ url_for('pages.ejercicio2') }}"
+  >
+    <span>Ejercicio 2</span>
+  </a>
+</div>
+{% endblock content %}
